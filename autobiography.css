@@ -1,3 +1,15 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    scroll-behavior: smooth;
+    scroll-margin: 100px;
+}
+
 /* Header Class */
 
 header{
@@ -5,8 +17,10 @@ header{
     background: #5D5C61;
     width: 100%;
     z-index: 12;
+    border-bottom: 4px solid white;
     position: fixed;
 }
+
 
 li{
     float: right;
@@ -17,15 +31,32 @@ li{
 li a{
     text-decoration: none;
     letter-spacing: 4px;
-    font-family: sans-serif;
     margin: 0 25px;
     color: #fff;
     text-transform: uppercase;
 }
 
+li a:hover{
+    border-width: 10px;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: ease-in-out 100ms;
+}
+
+a{
+    gap:0.2em;
+    list-style: none;
+    padding-right: 5px;
+    color:#1E272D;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 .wrapper{
     width: 1170px;
-    margin: 0 20%;
+    margin: 0 10%;
 }
 
 
@@ -34,9 +65,9 @@ li a{
 .intro{
     width: 100%;
     height: 780px;
-    position: fixed;
+    /* position: fixed; */
     top: 100px;
-    background-image: url(assets/sample.jpg);
+    background-image: url(assets/header.jpg);
     background-size: cover;
     background-position: center;
     
@@ -45,20 +76,44 @@ li a{
 .bg-text{
     color: white;
     text-transform: uppercase;
+    font-family: "Bowlby One SC";
+    font-size: 50px;
+    letter-spacing: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 60%;
-    padding: 20px;
-    text-align: center;
-    border: 3px solid white;
+}
 
+.icons{
+    font-size: 30px;
+}
+
+/* About Me */
+
+.about{
+    align-items: center;
+    justify-content: center;
+    padding: 4em;
+    gap: 2em;
+}
+
+
+/* Text Layout */
+.main{
+    align-items: center;
+    gap: 4em;
 }
 
 .row{
     display: flex;
     flex-direction: row;
+}
+
+.justify{text-align: justify;}
+
+/* background color */
+
+.bg-color {background-color: #B1A296;
 }
